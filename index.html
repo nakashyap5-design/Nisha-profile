@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nisha - Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .profile-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            padding: 2rem 0;
+        }
+
+        .profile-photo {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid white;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .profile-info h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .profile-info p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        main {
+            background: white;
+            padding: 3rem 0;
+        }
+
+        section {
+            padding: 2rem 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        section:last-child {
+            border-bottom: none;
+        }
+
+        h2 {
+            color: #667eea;
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 0.5rem;
+            display: inline-block;
+        }
+
+        .about-text {
+            font-size: 1rem;
+            line-height: 1.8;
+            margin-top: 1rem;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .skill-tag {
+            background-color: #667eea;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            font-size: 0.9rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .skill-tag:hover {
+            background-color: #764ba2;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin-top: 1rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .contact-item strong {
+            color: #667eea;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1.5rem 0;
+            margin-top: 3rem;
+        }
+
+        @media (max-width: 768px) {
+            .profile-info h1 {
+                font-size: 2rem;
+            }
+
+            .profile-photo {
+                width: 150px;
+                height: 150px;
+            }
+
+            .profile-section {
+                padding: 1rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="profile-section">
+                <img src="images/profile-photo.jpg" alt="Nisha Profile Photo" class="profile-photo">
+                <div class="profile-info">
+                    <h1>Nisha</h1>
+                    <p>Designer & Creative Professional</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <!-- About Section -->
+            <section class="about">
+                <h2>About Me</h2>
+                <p class="about-text">
+                    Welcome to my portfolio! I'm a passionate designer and creative professional dedicated to creating 
+                    beautiful and functional designs. With a keen eye for detail and a commitment to excellence, 
+                    I strive to bring ideas to life through innovative design solutions.
+                </p>
+            </section>
+
+            <!-- Skills Section -->
+            <section class="skills-section">
+                <h2>Skills</h2>
+                <div class="skills">
+                    <span class="skill-tag">UI/UX Design</span>
+                    <span class="skill-tag">Web Design</span>
+                    <span class="skill-tag">Graphic Design</span>
+                    <span class="skill-tag">Creative Thinking</span>
+                    <span class="skill-tag">Design Systems</span>
+                    <span class="skill-tag">Prototyping</span>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section class="contact">
+                <h2>Contact</h2>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <strong>Email:</strong>
+                        <a href="mailto:nisha@email.com">nisha@email.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <strong>Location:</strong>
+                        <span>Your City, Country</span>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Nisha. All rights reserved.</p>
+    </footer>
+</body>
+</html>
